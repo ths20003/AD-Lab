@@ -1,4 +1,4 @@
-<h1>Hydbrid Identity Lab : AD + Entra ID Integration</h1>
+<h1>Hybrid Identity Lab : AD + Entra ID Integration</h1>
 
 
 <h2>Description</h2>
