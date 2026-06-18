@@ -9,7 +9,7 @@ This project demonstrates the integration of on-premises Active Directory Domain
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Windows 10</b>
 
 <h2>Program walk-through:</h2>
 Environment & Cost Considerations --
