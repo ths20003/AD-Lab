@@ -2,21 +2,25 @@
 
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+This project demonstrates the integration of on-premises Active Directory Domain Services (AD DS) with Microsoft Entra ID (formerly Azure AD), creating a hybrid identity environment that mirrors real-world enterprise IT setups. The goal is to build a functional lab to manage users, groups, and policies across both cloud and on-premises resources.
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
-
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
 
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b> (21H2)
 
 <h2>Program walk-through:</h2>
+Environment & Cost Considerations --
 
+
+For this lab, I chose the **Standard E2s v7** VM size for all virtual machines (Domain Controller and Client). I made this decision for the following reasons:
+
+1.  **Performance Requirements:** A domain controller running Active Directory, DNS, and handling user authentication requires a stable level of performance. The 2 vCPUs and 16 GiB of RAM offered by the E2s v7 size meet the minimum recommendations for a smooth, responsive lab environment.
+
+2.  **Cost Awareness:** The Standard D2s v3 is a cost-effective choice that balances sufficient performance with a reasonable hourly rate, demonstrating an understanding of operational budget management in Azure.
+<br />
 <p align="center">
 VM Size: <br/>
 <img src="https://i.imgur.com/1v0Wh5M.png" height="80%" width="80%" alt="VM Size Selection"/>
